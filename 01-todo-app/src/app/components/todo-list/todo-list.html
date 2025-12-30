@@ -1,0 +1,9 @@
+<div id="todo-list" class="space-y-2">
+  @for (task of tasks(); track $index) {
+    <todo-item [task]="task" />
+  } @empty {
+    <div id="no-tasks-message" class="text-center py-4 text-gray-500 dark:text-gray-400">
+      No tasks yet. Add one above!
+    </div>
+  }
+</div>

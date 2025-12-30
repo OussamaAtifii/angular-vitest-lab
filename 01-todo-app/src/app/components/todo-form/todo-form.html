@@ -1,0 +1,24 @@
+<form [formGroup]="todoForm" (ngSubmit)="onSubmit()" id="todo-form" class="mb-6 flex flex-col">
+  <div class="flex w-full gap-2">
+    <input
+      formControlName="title"
+      type="text"
+      id="todo-input"
+      placeholder="Add a new task..."
+      class="flex-1 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark"
+    />
+
+    <button
+      type="submit"
+      class="px-4 py-2 bg-primary-light dark:bg-primary-dark text-white rounded-lg hover:opacity-90 transition-opacity hover:cursor-pointer"
+    >
+      Add
+    </button>
+  </div>
+
+  @if (title?.invalid && (title?.dirty || title?.touched)) {
+    @if (title?.errors?.['required']) {
+      <small class="text-red-300 mt-1 ml-1"> Task title is required </small>
+    }
+  }
+</form>
