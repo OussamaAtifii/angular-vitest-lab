@@ -28,4 +28,37 @@ Each project in this repository will include the following sections:
 ### 📌 Projects
 
 1. **TODO App**  
+   **Project Description**
    A basic task management application designed to practice the fundamentals of Angular testing.
+
+   **Project Structure**
+
+   ```text
+   /app/
+   ├── app.config.ts
+   ├── app.html
+   ├── app.spec.ts
+   ├── app.ts
+   ├── components
+   │   ├── todo-form
+   │   │   ├── todo-form.html
+   │   │   ├── todo-form.spec.ts
+   │   │   └── todo-form.ts
+   │   ├── todo-item
+   │   │   ├── todo-item.html
+   │   │   ├── todo-item.spec.ts
+   │   │   └── todo-item.ts
+   │   ├── todo-list
+   │   │   ├── todo-list.html
+   │   │   ├── todo-list.spec.ts
+   │   │   └── todo-list.ts
+   │   └── todo-stats
+   │       ├── todo-stats.html
+   │       ├── todo-stats.spec.ts
+   │       └── todo-stats.ts
+   ├── services
+   │   ├── todo.service.spec.ts
+   │   └── todo.service.ts
+   └── types
+      └── task.type.ts
+   ```

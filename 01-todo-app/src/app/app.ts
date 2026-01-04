@@ -7,8 +7,7 @@ import { TodoStats } from './components/todo-stats/todo-stats';
   selector: 'app-root',
   imports: [TodoForm, TodoList, TodoStats],
   templateUrl: './app.html',
-  styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('todo-app');
+  protected readonly title = signal('Todo App');
 }
