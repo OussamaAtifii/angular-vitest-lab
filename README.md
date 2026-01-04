@@ -30,7 +30,7 @@ Each project in this repository will include the following sections:
 1. **TODO App**
 
    **Project Description**  
-   A basic task management application designed to practice the fundamentals of Angular testing.
+    A basic task management application designed to practice the fundamentals of Angular testing.
 
    **Project Structure**
 
@@ -63,3 +63,35 @@ Each project in this repository will include the following sections:
    └── types
       └── task.type.ts
    ```
+
+   ### 🧪 Test Suites
+
+   This project includes a set of unit test suites focused on validating component behavior and service logic.
+
+   #### Components
+
+   <details>
+      <summary>TodoForm</summary>
+
+   - Reactive form validation.
+   - Prevents submission when the form is invalid.
+   - Calls `TodoService.createTask` on valid submission.
+   - Resets the form after submit.
+   - Uses a mocked `TodoService` to keep the component tests isolated.
+
+   </details>
+
+   ***
+
+   <details>
+      <summary>TodoItem</summary
+
+   - Ensures the task title is rendered correctly in the DOM.
+   - Validates the generated checkbox `inputId` based on the task ID.
+   - Confirms the checkbox reflects the task `completed` state.
+   - Updates the checkbox state when the input task changes.
+   - Calls `TodoService.markTaskAsCompleted` when the checkbox value changes.
+   - Calls `TodoService.deleteTask` when the delete button is clicked.
+   - Uses a mocked `TodoService` to keep the component tests isolated.
+
+   </details>
