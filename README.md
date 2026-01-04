@@ -27,8 +27,9 @@ Each project in this repository will include the following sections:
 
 ### 📌 Projects
 
-1. **TODO App**  
-   **Project Description**
+1. **TODO App**
+
+   **Project Description**  
    A basic task management application designed to practice the fundamentals of Angular testing.
 
    **Project Structure**
