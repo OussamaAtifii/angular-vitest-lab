@@ -84,7 +84,7 @@ Each project in this repository will include the following sections:
    ***
 
    <details>
-      <summary>TodoItem</summary
+      <summary>TodoItem</summary>
 
    - Ensures the task title is rendered correctly in the DOM.
    - Validates the generated checkbox `inputId` based on the task ID.
