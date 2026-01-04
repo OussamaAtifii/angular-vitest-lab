@@ -81,8 +81,6 @@ Each project in this repository will include the following sections:
 
    </details>
 
-   ***
-
    <details>
       <summary>TodoItem</summary>
 
